@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-//import Features from '../components/Features';
 import FeaturedPosts from '../components/FeaturedPosts';
 import FeaturedPortfolio from '../components/FeaturedPortfolio';
 
@@ -13,8 +12,7 @@ export const IndexPageTemplate = ({
 	heading,
 	subheading,
 	mainpitch,
-	description,
-	intro
+	description
 }) => (
 	<div>
 		<div
@@ -53,22 +51,23 @@ export const IndexPageTemplate = ({
 						<div className='column is-10 is-offset-1'>
 							<div className='content'>
 								<div className='content'>
-									<div className='tile'>
-										<h1 className='title'>{mainpitch.title}</h1>
-									</div>
-									<div className='tile'>
-										<h3 className='subtitle'>{mainpitch.description}</h3>
-									</div>
+									<h1 className='has-text-weight-semibold is-size-2'>
+										{heading}
+									</h1>
 								</div>
 								<div className='columns'>
 									<div className='column is-12'>
-										<h3 className='has-text-weight-semibold is-size-2'>
-											{heading}
-										</h3>
-										<p>{description}</p>
+										<h3 className='content'>{mainpitch.title}</h3>
+										<p>{mainpitch.description}</p>
+									</div>
+									<div className='column is-2'>
+										<img
+											className='imgStyle'
+											src='/img/craig-booker.jpg'
+											alt='Craig Booker'
+										/>
 									</div>
 								</div>
-
 								<div className='column is-12'>
 									<h3 className='has-text-weight-semibold is-size-2'>
 										Recent Articles
@@ -106,10 +105,7 @@ IndexPageTemplate.propTypes = {
 	heading: PropTypes.string,
 	subheading: PropTypes.string,
 	mainpitch: PropTypes.object,
-	description: PropTypes.string,
-	intro: PropTypes.shape({
-		blurbs: PropTypes.array
-	})
+	description: PropTypes.string
 };
 
 const IndexPage = ({ data }) => {
@@ -120,11 +116,10 @@ const IndexPage = ({ data }) => {
 			<IndexPageTemplate
 				image={frontmatter.image}
 				title={frontmatter.title}
-				heading={frontmatter.heading}
 				subheading={frontmatter.subheading}
-				mainpitch={frontmatter.mainpitch}
+				heading={frontmatter.heading}
 				description={frontmatter.description}
-				intro={frontmatter.intro}
+				mainpitch={frontmatter.mainpitch}
 			/>
 		</Layout>
 	);
@@ -145,6 +140,7 @@ export const pageQuery = graphql`
 		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
 			frontmatter {
 				title
+				subheading
 				image {
 					childImageSharp {
 						fluid(maxWidth: 2048, quality: 100) {
@@ -153,24 +149,9 @@ export const pageQuery = graphql`
 					}
 				}
 				heading
-				subheading
+				description
 				mainpitch {
 					title
-					description
-				}
-				description
-				intro {
-					blurbs {
-						image {
-							childImageSharp {
-								fluid(maxWidth: 240, quality: 64) {
-									...GatsbyImageSharpFluid
-								}
-							}
-						}
-						text
-					}
-					heading
 					description
 				}
 			}

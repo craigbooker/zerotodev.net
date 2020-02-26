@@ -1,29 +1,14 @@
 ---
 templateKey: index-page
 title: Hi, I'm Craig Booker
-image: /img/helloWorld1.jpg
-heading: Why ZeroToDev?
 subheading: I am exploring what it means to go from zero to dev.
+image: /img/helloWorld1.jpg
+heading: Welcome to zerotodev!
+description: A site documenting what it means to go from zero to developer.
 mainpitch:
-  title: Apps
+  title: My name is Craig Booker
   description: >
-    Below are a few of my apps I am working on.
-
-intro:
-  blurbs:
-    - image: /img/pureTriviaAppPromo.png
-      text: >
-        Pure Trivia
-    - image: /img/prayerAppPromo.png
-      text: >
-        Prayer App
-
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    I am an iOS Developer and Writer based in Oklahoma City. I am an iOS Developer and Writer - spending my time trying to make great products and write about topics which interest me. I spent 4.5 years of my early career working as a web developer before we refered to html, css, javascript as web development. I spent 3.5 years working for Apple retail. I have spent several years trying to make an impact through creating great software. A love for Apps turned me towards making them and writing about the process.
 main:
   heading: Great coffee with no compromises
   description: >
