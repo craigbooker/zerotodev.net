@@ -13,16 +13,10 @@ $gray: #3B414A;
 $teal: #00BABB;
 
 $primary: $main-black
-// primary-invert: $main-black-invert
 $tertiary: $white;
 $secondary: $secondary-black;
-// secondary: #8e8e93;
 
 $body-color: #222
-
-
-.navbar .navbar-menu
-  box-shadow:none !important
 
 .content .taglist 
   list-style: none;
@@ -132,7 +126,28 @@ body code
       background: white;
       max-height: 2.5rem;
 
-  
+.navbar-start
+  .navbar-item
+    &:hover
+      background: $secondary;
+
+.navbar-end
+  background: transparent;
+
+  .navbar-item
+    &:hover
+      background: $secondary;
+
+.index-title-wrap
+  h1,
+  h2
+    background-color: $primary;
+    color: white;
+    line-height: 1;
+    padding: 0.25em;
+
+
+
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
