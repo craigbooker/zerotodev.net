@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import github from '../img/github-icon.svg';
 import cbNameLogo from '../img/CraigBookerNameLogo.svg';
+import craigAvatar from '../../static/img/craig-booker.jpg';
 
 const Navbar = class extends React.Component {
 	constructor(props) {
@@ -34,21 +35,13 @@ const Navbar = class extends React.Component {
 
 	render() {
 		return (
-			<nav
-				className='navbar is-transparent'
-				role='navigation'
-				aria-label='main-navigation'
-			>
+			<nav className='navbar' role='navigation' aria-label='main-navigation'>
 				<div className='container'>
 					<div className='navbar-brand'>
 						<Link to='/' className='navbar-item' title='Logo'>
-							<img
-								src={cbNameLogo}
-								alt='Craig Booker'
-								style={{ width: '5em', height: '5em' }}
-							/>
+							<img src={craigAvatar} alt='Craig Booker' />
 						</Link>
-
+						<strong className='navbar-item'>ZeroToDev</strong>
 						{/* Hamburger menu */}
 						<div
 							className={`navbar-burger burger ${this.state.navBarActiveClass}`}
