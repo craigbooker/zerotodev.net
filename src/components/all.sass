@@ -5,16 +5,21 @@
 // Kaldi logo brand color: #FD461E
 
 // Color Scheme
-$main-black: #000000
-$main-black-invert: #fff
+$main-black: #000000;
+$secondary-black: #2b2523;
+$white: #fff;
+$black: #2b2523;
+$gray: #3B414A;
+$teal: #00BABB;
+
 $primary: $main-black
-$primary-invert: $main-black-invert
-$secondary: #8e8e93;
+// primary-invert: $main-black-invert
+$tertiary: $white;
+$secondary: $secondary-black;
+// secondary: #8e8e93;
 
 $body-color: #222
-$black: #2b2523;
-$gray: #3B414A
-$teal: #00BABB
+
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -100,8 +105,33 @@ nav.navbar
     &:hover
       background: transparent;
 
-.navbar-brand .navbar-item.logo
-  padding: 0 1rem
+body code 
+  background-color: $secondary;
+  color: white;
+  font-size: 0.875em;
+  font-weight: normal;
+  padding: 0.25em 0.5em 0.25em;
+
+.navbar-burger
+  color: $tertiary;
+
+.navbar-menu
+  background: transparent;
+
+  @include until($desktop)
+    background: $primary;
+    border-top: $tertiary solid 1px;
+
+.navbar-brand
+  .navbar-item
+    padding: 0.5 1rem;
+
+    img
+      border-radius: 50%;
+      border: solid 2px #f9f9f9;
+      background: white;
+      max-height: 2.5rem;
+
   
 footer.footer
   padding: 3rem 0rem 0rem
@@ -114,9 +144,9 @@ footer.has-background-gray
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $main-black-invert
-$menu-item-active-background-color:	$main-black-invert
-$menu-list-border-left: 1px solid $main-black-invert
+$menu-item-active-color: $tertiary
+$menu-item-active-background-color:	$tertiary
+$menu-list-border-left: 1px solid $tertiary
 $menu-label-color: $white-ter
 
 .menu-label

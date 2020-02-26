@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Hello & welcome!
-image: /img/home-jumbotron.jpg
-heading:
-subheading: My name is Craig Booker. I'm an iOS developer and writer.
+title: Hi, I'm Craig Booker
+image: /img/helloWorld1.jpg
+heading: Why ZeroToDev?
+subheading: I am exploring what it means to go from zero to dev.
 mainpitch:
   title: Apps
   description: >

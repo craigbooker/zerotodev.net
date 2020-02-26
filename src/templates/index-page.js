@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import Features from '../components/Features';
+//import Features from '../components/Features';
 import FeaturedPosts from '../components/FeaturedPosts';
 import FeaturedPortfolio from '../components/FeaturedPortfolio';
 
@@ -37,17 +37,7 @@ export const IndexPageTemplate = ({
 					flexDirection: 'column'
 				}}
 			>
-				<h1
-					className='has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen'
-					style={{
-						boxShadow:
-							'rgb(0, 186, 187, 0.75) 0.5rem 0px 0px, rgb(0, 186, 187, 0.75) -0.5rem 0px 0px',
-						backgroundColor: 'rgb(0, 186, 187, 0.75)',
-						color: 'white',
-						lineHeight: '1',
-						padding: '0.25em'
-					}}
-				>
+				<h1 className='has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen'>
 					{title}
 				</h1>
 				<h3
@@ -87,14 +77,7 @@ export const IndexPageTemplate = ({
 										<p>{description}</p>
 									</div>
 								</div>
-								<Features gridItems={intro.blurbs} />
-								<div className='columns'>
-									<div className='column is-12 has-text-centered'>
-										<Link className='btn' to='/apps'>
-											See all apps
-										</Link>
-									</div>
-								</div>
+
 								<div className='column is-12'>
 									<h3 className='has-text-weight-semibold is-size-2'>
 										Recent Articles
