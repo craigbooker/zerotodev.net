@@ -2,7 +2,8 @@ const config = require('./src/data/config');
 
 module.exports = {
 	siteMetadata: {
-		title: 'The Official site of Craig Booker',
+		title:
+			'ZeroToDev | A site documenting what it means to go from zero to developer.',
 		author: config.author,
 		description: config.defaultDescription,
 		siteUrl: config.url

@@ -1,8 +1,9 @@
 module.exports = {
-	defaultTitle: 'Craig Booker',
-	logo: 'https://craigbooker.com/img/favicon.png',
+	defaultTitle:
+		'ZeroToDev | A site documenting what it means to go from zero to developer.',
+	logo: 'https://zerotodev.net/img/favicon.png',
 	author: 'Craig Booker',
-	url: 'https://craigbooker.com',
+	url: 'https://zerotodev.net',
 	defaultDescription:
 		'My name is Craig Booker. I am an iOS developer and writer.',
 	socialLinks: {
