@@ -23,14 +23,14 @@ export const AboutPageTemplate = ({
 			}}
 		>
 			<div
-				className='has-text-weight-bold is-size-1'
+				className='index-title-wrap'
 				style={{
-					boxShadow:
-						'rgb(0, 186, 187, 0.75) 0.5rem 0px 0px, rgb(0, 186, 187, 0.75) -0.5rem 0px 0px',
-					backgroundColor: 'rgb(0, 186, 187, 0.75)',
-					color: 'white',
+					display: 'flex',
+					height: '150px',
 					lineHeight: '1',
-					padding: '0.25em'
+					justifyContent: 'space-around',
+					alignItems: 'left',
+					flexDirection: 'column'
 				}}
 			>
 				<h1 className='has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen'>
@@ -112,7 +112,7 @@ export default AboutPage;
 
 export const aboutPageQuery = graphql`
 	query AboutPageTemplate {
-		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+		markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
 			frontmatter {
 				title
 				subheading
