@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
-
 import Layout from '../components/Layout';
 import FeaturedPosts from '../components/FeaturedPosts';
-import FeaturedPortfolio from '../components/FeaturedPortfolio';
 
 export const IndexPageTemplate = ({
 	image,
@@ -76,17 +74,6 @@ export const IndexPageTemplate = ({
 									<div className='column is-12 has-text-centered'>
 										<Link className='btn' to='/blog'>
 											Read more
-										</Link>
-									</div>
-								</div>
-								<div className='column is-12'>
-									<h3 className='has-text-weight-semibold is-size-2'>
-										Recent Projects
-									</h3>
-									<FeaturedPortfolio />
-									<div className='column is-12 has-text-centered'>
-										<Link className='btn' to='/portfolio'>
-											See more projects
 										</Link>
 									</div>
 								</div>

@@ -2,11 +2,11 @@ const config = require('./src/data/config');
 
 module.exports = {
 	siteMetadata: {
+		siteUrl: config.url,
 		title:
 			'ZeroToDev | A site documenting what it means to go from zero to developer.',
 		author: config.author,
-		description: config.defaultDescription,
-		siteUrl: config.url
+		description: config.defaultDescription
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -39,6 +39,7 @@ module.exports = {
 			resolve: 'gatsby-transformer-remark',
 			options: {
 				plugins: [
+					`gatsby-remark-reading-time`,
 					{
 						resolve: 'gatsby-remark-relative-images',
 						options: {
@@ -49,8 +50,6 @@ module.exports = {
 						resolve: 'gatsby-remark-images',
 						options: {
 							// It's important to specify the maxWidth (in pixels) of
-							// the content container as this plugin uses this as the
-							// base for generating different widths of each image.
 							maxWidth: 2048
 						}
 					},

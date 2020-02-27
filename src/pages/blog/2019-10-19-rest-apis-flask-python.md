@@ -1,7 +1,7 @@
 ---
 templateKey: 'blog-post'
 title: 'Rest APIs With Flask and Python'
-image: '/img/blog/restApisWithFlaskPython.jpg'
+image: '/img/restApisFlaskPython.jpg'
 date: 2019-10-19
 emoji: 😃
 description: A series to document things that I am learning in development.
