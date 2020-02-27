@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
-import craigAvatar from '../../static/img/craig-booker.jpg';
+//import craigAvatar from '../../static/img/craig-booker.jpg';
 
 export const BlogPostTemplate = ({
 	content,
