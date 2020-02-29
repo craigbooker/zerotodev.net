@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Containers, Docker, and DevOps'
 image: '/img/C1PromoDockerMastery.png'
-date: 2019-11-03
+date: '2019-11-03'
 emoji: 😃
 description: A series to document things that I am learning in development.
 tags:
