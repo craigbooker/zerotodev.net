@@ -2,6 +2,7 @@
 templateKey: 'blog-post'
 title: 'The Journey Begins'
 image: '/img/blog/theJourneyBegins.jpg'
+featuredimage: '/img/blog/theJourneyBegins.jpg'
 date: '2020-02-28'
 emoji: 😃
 description: 'The beginning of my dev story.'
