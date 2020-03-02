@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Hi, I'm Craig Booker
 subheading: I am exploring what it means to go from zero to dev.
-image: /img/helloWorld1.jpg
+image: '/img/helloWorld1.jpg'
 heading: Welcome to zerotodev!
 description: A site documenting what it means to go from zero to developer.
 mainpitch:

@@ -1,10 +1,11 @@
 ---
 templateKey: 'blog-post'
 title: 'The Journey Begins'
-image: '/img/blog/theJourneyBegins.jpg'
-featuredimage: '/img/blog/theJourneyBegins.jpg'
+image: '/img/blog/theJourneyBegins-noTextHdr.jpg'
+featuredimage: '/img/blog/theJourneyBegins-noTextHdr.jpg'
 date: '2020-02-28'
 emoji: 😃
+featuredpost: false
 description: 'The beginning of my dev story.'
 tags:
   - My Dev Story,

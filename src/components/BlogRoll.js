@@ -15,9 +15,7 @@ class BlogRoll extends React.Component {
 						<div className='column is-12' key={post.id}>
 							<article className='tile is-parent box notification'>
 								<div className='column is-3'>
-									<PreviewCompatibleImage
-										imageInfo={post.frontmatter.featuredimage}
-									/>
+									<PreviewCompatibleImage imageInfo={post.frontmatter} />
 								</div>
 								<div className='column is-6'>
 									<p>

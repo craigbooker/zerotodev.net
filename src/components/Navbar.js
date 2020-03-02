@@ -11,6 +11,9 @@ const Navbar = class extends React.Component {
 		};
 	}
 
+	// Only close nav if it is open
+	handleLinkClick = () => this.state.active;
+
 	toggleHamburger = () => {
 		// toggle the active boolean in the state
 		this.setState(
@@ -39,7 +42,12 @@ const Navbar = class extends React.Component {
 						<Link to='/' className='navbar-item' title='Logo'>
 							<img src={craigAvatar} alt='Craig Booker' />
 						</Link>
-						<Link to='/' className='navbar-item' title='LogoText'>
+						<Link
+							to='/'
+							onClick={this.handleLinkClick}
+							className='navbar-item'
+							title='LogoText'
+						>
 							<strong className='navbar-item'>ZeroToDev</strong>
 						</Link>
 						{/* Hamburger menu */}

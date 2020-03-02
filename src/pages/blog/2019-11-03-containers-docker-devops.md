@@ -5,6 +5,7 @@ image: '/img/C1PromoDockerMastery.png'
 featuredimage: '/img/C1PromoDockerMastery.png'
 date: '2019-11-03'
 emoji: 😃
+featuredpost: false
 description: A series to document things that I am learning in development.
 tags:
   - Lessons Learned

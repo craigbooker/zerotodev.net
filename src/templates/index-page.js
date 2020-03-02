@@ -10,7 +10,8 @@ export const IndexPageTemplate = ({
 	heading,
 	subheading,
 	mainpitch,
-	description
+	description,
+	intro
 }) => (
 	<div>
 		<div
@@ -92,7 +93,10 @@ IndexPageTemplate.propTypes = {
 	heading: PropTypes.string,
 	subheading: PropTypes.string,
 	mainpitch: PropTypes.object,
-	description: PropTypes.string
+	description: PropTypes.string,
+	intro: PropTypes.shape({
+		blurbs: PropTypes.array
+	})
 };
 
 const IndexPage = ({ data }) => {
@@ -103,10 +107,11 @@ const IndexPage = ({ data }) => {
 			<IndexPageTemplate
 				image={frontmatter.image}
 				title={frontmatter.title}
-				subheading={frontmatter.subheading}
 				heading={frontmatter.heading}
-				description={frontmatter.description}
+				subheading={frontmatter.subheading}
 				mainpitch={frontmatter.mainpitch}
+				description={frontmatter.description}
+				intro={frontmatter.intro}
 			/>
 		</Layout>
 	);
@@ -127,7 +132,6 @@ export const pageQuery = graphql`
 		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
 			frontmatter {
 				title
-				subheading
 				image {
 					childImageSharp {
 						fluid(maxWidth: 2048, quality: 100) {
@@ -136,9 +140,24 @@ export const pageQuery = graphql`
 					}
 				}
 				heading
-				description
+				subheading
 				mainpitch {
 					title
+					description
+				}
+				description
+				intro {
+					blurbs {
+						image {
+							childImageSharp {
+								fluid(maxWidth: 240, quality: 64) {
+									...GatsbyImageSharpFluid
+								}
+							}
+						}
+						text
+					}
+					heading
 					description
 				}
 			}

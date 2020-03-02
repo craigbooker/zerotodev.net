@@ -5,6 +5,7 @@ image: '/img/restApisFlaskPython.jpg'
 featuredimage: '/img/restApisFlaskPython.jpg'
 date: 2019-10-19
 emoji: 😃
+featuredpost: false
 description: A series to document things that I am learning in development.
 tags:
   - Lessons Learned
