@@ -1,8 +1,7 @@
 ---
 templateKey: 'blog-post'
 title: 'Containers, Docker, and DevOps'
-image: '/img/C1PromoDockerMastery.png'
-featuredimage: '/img/C1PromoDockerMastery.png'
+image: '/img/blog/C1PromoDockerMastery.png'
 date: '2019-11-03'
 emoji: 😃
 featuredpost: false
