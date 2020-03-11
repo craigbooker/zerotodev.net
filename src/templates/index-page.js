@@ -8,10 +8,8 @@ export const IndexPageTemplate = ({
 	image,
 	title,
 	heading,
-	subheading,
-	mainpitch,
-	description,
-	intro
+	subtitle,
+	description
 }) => (
 	<div>
 		<div
@@ -39,7 +37,7 @@ export const IndexPageTemplate = ({
 					{title}
 				</h1>
 				<h2 className='has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen'>
-					{subheading}
+					{subtitle}
 				</h2>
 			</div>
 		</div>
@@ -54,19 +52,7 @@ export const IndexPageTemplate = ({
 										{heading}
 									</h1>
 								</div>
-								<div className='columns'>
-									<div className='column is-12'>
-										<h3 className='content'>{mainpitch.title}</h3>
-										<p>{mainpitch.description}</p>
-									</div>
-									<div className='column is-2'>
-										<img
-											className='imgStyle'
-											src='/img/craig-booker.jpg'
-											alt='Craig Booker'
-										/>
-									</div>
-								</div>
+
 								<div className='column is-12'>
 									<h3 className='has-text-weight-semibold is-size-2'>
 										Recent Articles
@@ -90,13 +76,9 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
 	image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 	title: PropTypes.string,
+	subtitle: PropTypes.string,
 	heading: PropTypes.string,
-	subheading: PropTypes.string,
-	mainpitch: PropTypes.object,
-	description: PropTypes.string,
-	intro: PropTypes.shape({
-		blurbs: PropTypes.array
-	})
+	description: PropTypes.string
 };
 
 const IndexPage = ({ data }) => {
@@ -107,11 +89,9 @@ const IndexPage = ({ data }) => {
 			<IndexPageTemplate
 				image={frontmatter.image}
 				title={frontmatter.title}
+				subtitle={frontmatter.subheading}
 				heading={frontmatter.heading}
-				subheading={frontmatter.subheading}
-				mainpitch={frontmatter.mainpitch}
 				description={frontmatter.description}
-				intro={frontmatter.intro}
 			/>
 		</Layout>
 	);
@@ -132,6 +112,7 @@ export const pageQuery = graphql`
 		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
 			frontmatter {
 				title
+				subtitle
 				image {
 					childImageSharp {
 						fluid(maxWidth: 2048, quality: 100) {
@@ -140,26 +121,11 @@ export const pageQuery = graphql`
 					}
 				}
 				heading
-				subheading
 				mainpitch {
 					title
 					description
 				}
 				description
-				intro {
-					blurbs {
-						image {
-							childImageSharp {
-								fluid(maxWidth: 240, quality: 64) {
-									...GatsbyImageSharpFluid
-								}
-							}
-						}
-						text
-					}
-					heading
-					description
-				}
 			}
 		}
 	}
