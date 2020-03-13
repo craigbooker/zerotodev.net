@@ -89,7 +89,7 @@ const IndexPage = ({ data }) => {
 			<IndexPageTemplate
 				image={frontmatter.image}
 				title={frontmatter.title}
-				subtitle={frontmatter.subheading}
+				subtitle={frontmatter.subtitle}
 				heading={frontmatter.heading}
 				description={frontmatter.description}
 			/>
@@ -121,10 +121,6 @@ export const pageQuery = graphql`
 					}
 				}
 				heading
-				mainpitch {
-					title
-					description
-				}
 				description
 			}
 		}
