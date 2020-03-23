@@ -16,9 +16,9 @@ There are not many words or ideas which I can utilize as a proper metaphor when 
 
 There are many avenues to becoming a developer. People from all walks of life choose to make this the focus of their career. And yet we still do not have a good way of explaining how one becomes a software developer. If a middle school or high school student were to come to me doing a report on careers in software development, I would not have a clear picture to paint for them as to how to get started. I could share some common routes many take on the path to becoming a software developer, but there is very little clarity on these common paths and their advantages or disadvantages. Is this just “how it is always been done” or are there options which could serve the people, the developers better?
 
-## To Create Change
+## To Create Positive Change
 
-It seems as though there are a lot of external forces which are creating and defining the development industry before our very eyes. Many of these forces do so without considering the best interests of developers. I stand for the people in the trenches of software development. I choose to value the people over profit or profession. Let us give voice to those who create the software, who test the software, etc. Let us bring a different perspective to the table which serves the interest of the hardworking individuals who call this their career. Let us work with the external forces to invoke positive change which benefits all involved.
+It seems as though there are a lot of external forces which are creating and defining the development industry before our very eyes. Many of these forces do so without considering the best interest of developers. I stand for the people in the trenches of software development. I choose to value the people over profit or profession. Let us give voice to those who create the software, who test the software, etc. Let us bring a different perspective to the table, which serves the interest of the hardworking individuals who call this their career. Let us work with the external forces to invoke positive change which benefits all involved.
 
 ## To Inspire Others
 
