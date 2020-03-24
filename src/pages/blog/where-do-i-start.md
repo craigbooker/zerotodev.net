@@ -1,7 +1,7 @@
 ---
 templateKey: 'blog-post'
 title: 'Where Do I Start?'
-date: '2020-03-25'
+date: '2020-03-24'
 featuredpost: false
 image: /img/blog/whereDoIStart-noTxt-fb.jpg
 description:
